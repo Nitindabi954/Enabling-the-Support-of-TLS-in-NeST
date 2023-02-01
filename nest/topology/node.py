@@ -264,7 +264,11 @@ class Node:
         interface.node_id = self.id
         engine.add_int_to_ns(self.id, interface.id)
 
+<<<<<<< HEAD
     def create_tls_client(self, server_ip: str):
+=======
+    def tls_client(self, server_ip: str):
+>>>>>>> 6731d06359dc58123cecd9bf89ddf0fca23b2e4c
         """
         Creating TLS client.
 
@@ -275,7 +279,11 @@ class Node:
         """
         tls.create_tls_client(self.id, server_ip)
 
+<<<<<<< HEAD
     def create_tls_server(self):
+=======
+    def tls_server(self):
+>>>>>>> 6731d06359dc58123cecd9bf89ddf0fca23b2e4c
         """
         Creating TLS server.
         """
