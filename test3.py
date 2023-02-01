@@ -72,8 +72,8 @@ r2.add_route("DEFAULT", etr2a)
 
 # `Ping` from `h1` to `h2` as a separate process. Send 10 ping packets.
 tls.certificate("IN", "Karnataka", "Surathkal", "NITK", "NIT", "NitinDabi", "Nitindabi954@gmail.com")
-h2.tls_server()
-h1.tls_client(eth2.address)
+h2.create_tls_server()
+h1.create_tls_client(eth2.address)
 process = multiprocessing.Process(target=h1.ping, args=(eth2.address, 10))
 process.start()
 
